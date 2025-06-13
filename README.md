@@ -59,6 +59,10 @@ A simple React application that displays a 5-day weather forecast (3-hour interv
 2. **Install dependencies**  
    ```bash
    npm install
+---
+
+## Demo
+ <img width="583" alt="Screenshot 2025-06-13 at 14 46 37" src="https://github.com/user-attachments/assets/87dc2eea-da2b-439f-bf67-b4a977e7e480" />
 
 ---
 
@@ -84,4 +88,3 @@ src/
 
 
 ## Demo
-<img width="683" alt="Screenshot 2025-06-13 at 14 41 59" src="https://github.com/user-attachments/assets/e1b8cc87-4680-4272-a5e7-16973d4ae2eb" />
