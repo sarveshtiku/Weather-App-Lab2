@@ -1,107 +1,73 @@
-Weather Report App
+# Weather Report App
 
-A simple React application that displays a 5-day weather forecast (3-hour intervals) for any city using the OpenWeatherMap API. Built as part of the CodePath SITE Summer Internship Weather Report lab, it demonstrates:
+A simple React application that displays a 5-day weather forecast (3-hour intervals) for any city using the OpenWeatherMap API. Built as part of the CodePath SITE Summer Internship **Weather Report** lab, it demonstrates:
 
-State management in React (lifting JSON into state)
+- **State management** in React (lifting JSON into state)
+- **Props** to pass data between components
+- **Helper utilities** for parsing and formatting data
+- **API integration** with OpenWeatherMap
+- **Responsive UI** components: forecast cards, sunrise/sunset display, navigation
 
-Props to pass data between components
+---
 
-Helper utilities for parsing and formatting data
+## Demo
+<img width="725" alt="Screenshot 2025-06-13 at 14 41 21" src="https://github.com/user-attachments/assets/d54b2950-41f4-4c15-889c-b06139d94cc9" />
+<img width="683" alt="Screenshot 2025-06-13 at 14 41 59" src="https://github.com/user-attachments/assets/e1b8cc87-4680-4272-a5e7-16973d4ae2eb" />
+---
 
-API integration with OpenWeatherMap
+## Table of Contents
 
-Responsive UI components: forecast cards, sunrise/sunset display, navigation
+1. [Features](#features)  
+2. [Tech Stack](#tech-stack)  
+3. [Getting Started](#getting-started)  
+   - [Prerequisites](#prerequisites)  
+   - [Installation](#installation)  
+   - [Environment Variables](#environment-variables)  
+   - [Running the App](#running-the-app)  
+4. [Project Structure](#project-structure)  
 
-Demo
+---
 
+## Features
 
+- **City Search**: Type any city name and fetch live 5-day forecast  
+- **Forecast Cards**: Displays date, condition icon, temperature (°F)  
+- **Sun & Moon**: Shows sunrise 🌅 and sunset 🌇 times for the selected city  
+- **Navigation**: Smooth scroll to Home, Forecast, and About sections  
+- **Error Handling**: User-friendly message on invalid city or network errors  
+- **Loading State**: Indicator while fetching data  
 
-Table of Contents
+---
 
-Features
+## Tech Stack
 
-Tech Stack
+- **React** (Vite) for UI and state management  
+- **OpenWeatherMap API** for live forecast data  
+- **JavaScript** (ES6+), **CSS Modules** for styling  
+- **PropTypes** for component prop validation  
 
-Getting Started
+---
 
-Prerequisites
+## Getting Started
 
-Installation
+### Prerequisites
 
-Environment Variables
+- Node.js (v14+)  
+- npm or yarn  
 
-Running the App
+### Installation
 
-Project Structure
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/<your-username>/weather-report.git
+   cd weather-report
+2. **Install dependencies**  
+   ```bash
+   npm install
 
-Usage
+---
 
-Future Enhancements
-
-License
-
-Features
-
-City Search: Type any city name and fetch live 5-day forecast
-
-Forecast Cards: Displays date, condition icon, temperature (°F)
-
-Sun & Moon: Shows sunrise 🌅 and sunset 🌇 times for the selected city
-
-Navigation: Smooth scroll to Home, Forecast, and About sections
-
-Error Handling: User-friendly message on invalid city or network errors
-
-Loading State: Indicator while fetching data
-
-Tech Stack
-
-React (Vite) for UI and state management
-
-OpenWeatherMap API for live forecast data
-
-JavaScript (ES6+), CSS Modules for styling
-
-PropTypes for component prop validation
-
-Getting Started
-
-Prerequisites
-
-Node.js (v14+)
-
-npm or yarn
-
-Installation
-
-Clone the repository
-
-git clone https://github.com/<your-username>/weather-report.git
-cd weather-report
-
-Install dependencies
-
-npm install
-# or
-yarn install
-
-Environment Variables
-
-Create a .env file in the project root and add your OpenWeatherMap API key:
-
-VITE_APP_API_KEY=your_api_key_here
-
-Note: The .env file is included in .gitignore by default to keep your API key secure.
-
-Running the App
-
-npm run dev
-# or
-yarn dev
-
-Open http://localhost:3000 in your browser to view the app.
-
-Project Structure
+## Project Structure  
 
 src/
 ├── components/
@@ -119,38 +85,4 @@ src/
 ├── App.jsx              # Main component with state & fetch logic
 ├── App.css              # Global styles
 └── main.jsx             # Vite entry point
-
-Usage
-
-Enter a city name (e.g. Atlanta, Bangalore) and click Search.
-
-Watch the loading indicator briefly.
-
-View the 5-day forecast cards, each showing:
-
-Date (Tue, Mar 12)
-
-Weather icon (☀️, ☁️, 🌧️, etc.)
-
-Temperature in Fahrenheit
-
-Sunrise and sunset times 🌅 🌇
-
-Use the Home, Forecast, and About links to jump between page sections.
-
-Future Enhancements
-
-Hourly View: Show more granular hourly forecast in a separate view.
-
-Unit Toggle: Switch between °F, °C, and K.
-
-Geolocation: Auto-detect user’s location on load.
-
-Caching: Store recent searches in LocalStorage or IndexedDB.
-
-UI Polish: Add animations, transitions, and responsive design tweaks.
-
-License
-
-This project is licensed under the MIT License. See LICENSE for details.
-
+ 
