@@ -64,6 +64,7 @@ A simple React application that displays a 5-day weather forecast (3-hour interv
 
 ## Project Structure  
 
+```markdown
 src/
 ├── components/
 │   ├── Header.jsx       # App header
@@ -80,7 +81,7 @@ src/
 ├── App.jsx              # Main component with state & fetch logic
 ├── App.css              # Global styles
 └── main.jsx             # Vite entry point
- ---
+
 
 ## Demo
 <img width="683" alt="Screenshot 2025-06-13 at 14 41 59" src="https://github.com/user-attachments/assets/e1b8cc87-4680-4272-a5e7-16973d4ae2eb" />
