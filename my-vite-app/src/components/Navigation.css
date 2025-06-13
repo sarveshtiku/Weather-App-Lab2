@@ -1,0 +1,12 @@
+/* src/components/Navigation.css */
+.app-nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.app-nav a {
+  text-decoration: none;
+  color: #007ACC;
+  font-weight: 500;
+}

@@ -1,0 +1,21 @@
+/* src/components/SunMoon.css */
+.sunmoon {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+.sunmoon .sun,
+.sunmoon .moon {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.sunmoon small {
+  color: #555;
+}
+/* src/components/SunMoon.css */
+/* add a little breathing room before the sunset emoji */
+.sunmoon .moon span[aria-label="sunset"] {
+  margin-left: 0.5rem;
+}
