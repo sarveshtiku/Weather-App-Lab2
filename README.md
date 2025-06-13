@@ -86,6 +86,3 @@ src/
 ├── App.jsx              # Main component with state & fetch logic
 ├── App.css              # Global styles
 └── main.jsx             # Vite entry point
-
-
-## Demo
