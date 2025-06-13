@@ -4,6 +4,7 @@ import SunMoon   from './SunMoon';
 import './Day.css';
 
 export default function Day({
+
   date,
   temperature,
   weather,
@@ -34,9 +35,9 @@ export default function Day({
 Day.propTypes = {
   date:        PropTypes.string.isRequired,
   temperature: PropTypes.number.isRequired,
+  icon:        PropTypes.string.isRequired,
   weather:     PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  icon:        PropTypes.string.isRequired,
   sunrise:     PropTypes.string.isRequired,
   sunset:      PropTypes.string.isRequired
 };
