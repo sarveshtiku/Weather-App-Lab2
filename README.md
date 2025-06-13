@@ -10,11 +10,6 @@ A simple React application that displays a 5-day weather forecast (3-hour interv
 
 ---
 
-## Demo
-<img width="725" alt="Screenshot 2025-06-13 at 14 41 21" src="https://github.com/user-attachments/assets/d54b2950-41f4-4c15-889c-b06139d94cc9" />
-<img width="683" alt="Screenshot 2025-06-13 at 14 41 59" src="https://github.com/user-attachments/assets/e1b8cc87-4680-4272-a5e7-16973d4ae2eb" />
----
-
 ## Table of Contents
 
 1. [Features](#features)  
@@ -85,4 +80,7 @@ src/
 ├── App.jsx              # Main component with state & fetch logic
 ├── App.css              # Global styles
 └── main.jsx             # Vite entry point
- 
+ ---
+
+## Demo
+<img width="683" alt="Screenshot 2025-06-13 at 14 41 59" src="https://github.com/user-attachments/assets/e1b8cc87-4680-4272-a5e7-16973d4ae2eb" />
