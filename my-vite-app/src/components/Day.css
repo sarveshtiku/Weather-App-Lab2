@@ -1,34 +1,63 @@
 /* src/components/Day.css */
+
+/* entrance animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* the card wrapper */
 .day-card {
-  flex: 1;
-  min-width: 100px;
-  padding: 1rem;
   background: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
   text-align: center;
+  font-family: 'Crimson Text', serif;
+
+  /* start hidden, then fade in */
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+  animation-delay: var(--delay, 0ms);
 }
+
+/* icon inside the card */
+.weather-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0.5rem 0;
+}
+
+/* date/title */
 .day-card h3 {
-  margin: 0 0 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #1f1c2c;
 }
+
+/* general paragraphs */
+.day-card p {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+}
+
+/* hot vs cold styling */
 .hot {
-  color: #d9534f; /* red/orange */
-  font-weight: bold;
+  color: #d9534f;
+  font-weight: 600;
 }
 .cold {
-  color: #0275d8; /* blue */
-  font-weight: bold;
-}
-/* make all text in the card black by default */
-.day-card {
-  color: black;
+  color: #0275d8;
+  font-weight: 600;
 }
 
-/* ensure your hot/cold rules still apply */
-.day-card .hot {
-  color: #d9534f; /* your existing red/orange */
+/* description text override */
+.desc {
+  color: #000;         /* always black */
+  font-style: normal;  /* no italics */
+  margin-top: 0.25rem;
 }
 
-.day-card .cold {
-  color: #0275d8; /* your existing blue */
+/* force weather main text (e.g. “Clouds”) to black */
+.day-card .weather {
+  color: #000 !important;
 }

@@ -4,6 +4,7 @@ import './SearchForm.css';
 
 export default function SearchForm({ onSearch }) {
   const [city, setCity] = useState('');
+
   return (
     <form
       className="search-form"

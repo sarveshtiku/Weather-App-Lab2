@@ -1,6 +1,46 @@
 /* src/components/MainContent.css */
 .main-content {
-  background: #f9f9f9;
+  background: rgba(255,255,255,0.85);
   padding: 2rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+/* src/components/MainContent.css */
+/* src/components/MainContent.css */
+.main-content {
+  background: rgba(255,255,255,0.85);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+.main-content {
+  background: rgba(255,255,255,0.85);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+
+  /* add these: */
+  max-width: 1200px;    /* wide enough for 5 cards */
+  margin: 0 auto;       /* center it */
+}
+/* src/components/MainContent.css */
+.main-content {
+  background: rgba(255,255,255,0.85);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+
+  /* ↑↑ new ↓↓ */
+  max-width: 1000px;   /* enough for (5 × 200px) + gaps */
+  margin: 0 auto;      /* center the panel in the page */
+}
+/* src/components/MainContent.css */
+.main-content {
+  background: rgba(255,255,255,0.85);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+
+  max-width: 1400px;
+  margin: 0 auto;
 }

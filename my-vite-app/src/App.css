@@ -1,3 +1,16 @@
+/* src/App.css */
+
+/* Import your font */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Crimson Text', serif;
+  background: linear-gradient(135deg, #3b3153, #25213e);
+  color: #fafafa;
+  min-height: 100vh;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,56 +18,246 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Section tweaks */
+.home-section h2,
+.about-section h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.forecast-title {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-.card {
-  padding: 2em;
-  background: #fff;
-  border-radius: 0.5rem;
-  color: black;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  max-width: 600px;    /* optional, to constrain the card */
-  margin: 2rem auto;   /* center it on the page */
-}
-
-/* src/App.css */
+/* Loading / error */
+.loading { font-style: italic; }
+.error   { color: #ff6666; font-weight: bold; }
+.home-section   { color: #1f1c2c; }
+.about-section  { color: #1f1c2c; }
 #root {
+  /* allow plenty of room for a 5-card row */
+  max-width: 2000px; 
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+/* src/components/Forecast.css */
+.forecast-section {
+  width: 100vw;       /* span the full viewport */
+  max-width: 1600px;  /* but no wider than this */
+  margin: 0 auto;     
+}
+
+/* and your .forecast grid inside it */
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  padding: 2rem 0;
+}
+/* App.css */
+
+/* 1. Make the root a column flex container and center all children */
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* horizontal centering */
+}
+
+/* 2. Constrain the main content panel and center its text */
+.main-content {
+  width: 100%;
+  max-width: 1200px;     /* or whatever max width you prefer */
+  margin: 0;              /* since #root is centering it already */
+  text-align: center;     /* center headings, paragraphs, etc. */
+}
+
+/* 3. Ensure the search form stays centered inside the panel */
+.search-form {
+  justify-content: center;
+}
+
+/* 4. Center the forecast title & SunMoon row */
+.forecast-title,
+.sunmoon {
+  text-align: center;
+}
+
+/* 5. Center your grid of cards (you already have a grid, just ensure centering) */
+.forecast {
+  justify-items: center;   /* centers each card within its grid cell */
+}
+/* App.css */
+
+/* Center the entire app */
+body, html {
+  margin: 0;
+  height: 100%;
+  background: linear-gradient(135deg, #3b3153, #25213e);
+  font-family: 'Crimson Text', serif;
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  align-items: center;       /* vertical centering */
+  justify-content: center;   /* horizontal centering */
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* This becomes your “card” */
+.main-content {
+  width: 100%;
+  max-width: 1200px;         /* control how wide the panel can go */
+  background: rgba(255,255,255,0.85);
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  padding: 2rem;
+  text-align: center;        /* center all headings/text inside */
+}
+/* 1) Make your #root a centered, column flex container */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(135deg, #3b3153, #25213e);
+  font-family: 'Crimson Text', serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /* horizontally center everything */
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* 2) Constrain and center each of your main sections */
+.app-header,
+.app-nav,
+.main-content,
+.app-footer {
+  width: 100%;
+  max-width: 900px;        /* same max-width everywhere */
+  margin: 0 auto;          /* ensure they sit in the middle */
+  text-align: center;      /* center text inside them */
+}
+
+/* 3) Make the nav links sit in the middle */
+.app-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* 4) If you ever have a .forecast grid, center its title too */
+.forecast-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+/* in your global App.css */
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* center everything horizontally */
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.app-header,
+.app-nav,
+.main-content,
+.app-footer {
+  width: 100%;
+  max-width: 900px;         /* same max-width everywhere */
+  margin: 0 auto;
+  text-align: center;       /* center their contents */
+}
+/* in App.css or a new Section.css */
+
+.forecast-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+#root {
+  max-width: 1400px;  /* or even 1400px, up to you */
+  margin: 0 auto;
+  padding: 2rem;
+}
+/* src/App.css */
+
+#root {
+  /* ↑↑ bump this if you want the entire app wider */
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+/* src/App.css */
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* <-- centers header/nav/main/footer horizontally */
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+/* in your global App.css (or a shared layout file) */
+.app-nav,
+.app-footer {
   max-width: 900px;
   margin: 0 auto;
-  font-family: sans-serif;
-  padding: 1rem;
+  text-align: center;
+}
+
+/* App.css */
+#root {
+  width: 100%;
+  max-width: 1400px;       /* desktop cap */
+  margin: 0 auto;
+  padding: 2rem 1rem;      /* slight padding on small screens */
+  box-sizing: border-box;
+}
+
+/* MainContent.css */
+.main-content {
+  width: 100%;
+  max-width: 1200px;       /* cap on desktop */
+  margin: 0 auto;
+  padding: 2rem 1rem;      /* allow breathing room on mobile */
+  box-sizing: border-box;
+}
+/* App.css — at the very end of the file */
+
+@media (max-width: 600px) {
+  /* make the forecast cards stack into one column */
+  .forecast {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem 0 !important;
+  }
+
+  /* stack the search form & center it */
+  .search-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-form input {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .search-form button {
+    margin-top: 0.5rem;
+  }
 }

@@ -1,12 +1,19 @@
 /* src/components/Navigation.css */
 .app-nav {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: center;
   margin-bottom: 2rem;
 }
+
 .app-nav a {
+  font-family: 'Crimson Text', serif;
   text-decoration: none;
-  color: #007ACC;
-  font-weight: 500;
+  color: #fafafa;
+  font-weight: 400;
+  transition: color 200ms;
+}
+
+.app-nav a:hover {
+  color: #f2e9e4;
 }

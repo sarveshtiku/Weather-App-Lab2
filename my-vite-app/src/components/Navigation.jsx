@@ -1,4 +1,4 @@
-// ── src/components/Navigation.jsx ──
+// src/components/Navigation.jsx
 import './Navigation.css';
 
 export default function Navigation() {

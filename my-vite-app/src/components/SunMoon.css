@@ -1,21 +1,54 @@
 /* src/components/SunMoon.css */
 .sunmoon {
   display: flex;
-  justify-content: space-around;
-  font-size: 0.8rem;
-  margin-top: 0.5rem;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
 }
+
 .sunmoon .sun,
 .sunmoon .moon {
   display: flex;
   align-items: center;
   gap: 0.25rem;
 }
+
 .sunmoon small {
   color: #555;
 }
-/* src/components/SunMoon.css */
-/* add a little breathing room before the sunset emoji */
-.sunmoon .moon span[aria-label="sunset"] {
-  margin-left: 0.5rem;
+/* src/components/SearchForm.css */
+.search-form {
+  display: flex;                /* keep your flex layout */
+  gap: 0.5rem;                  /* space between input & button */
+  
+  width: 80%;                   /* adapt as you like */
+  max-width: 600px;             /* prevents it from growing too wide */
+  margin: 0 auto 2rem;          /* auto-center horizontally, plus bottom margin */
+}
+.search-form input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 2px solid #ccc;
+  border-radius: 0.75rem;
+  font-family: 'Crimson Text', serif;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 200ms;
+}
+.search-form input:focus {
+  border-color: #928dab;
+}
+.search-form button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: #1f1c2c;
+  color: white;
+  border-radius: 0.75rem;
+  font-family: 'Crimson Text', serif;
+  cursor: pointer;
+  transition: background 200ms;
+}
+.search-form button:hover {
+  background: #342d45;
 }

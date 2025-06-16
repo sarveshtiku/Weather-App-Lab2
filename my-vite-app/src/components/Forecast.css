@@ -1,8 +1,20 @@
 /* src/components/Forecast.css */
+
+/* container fade-in */
+@keyframes fadeInContainer {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 .forecast {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
+  /* layout: auto-wrapping grid of cards */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;                /* spacing between cards */
+  justify-items: center;    /* center each card in its cell */
+  align-items: start;       /* align tops */
+  padding: 2rem 0;          /* breathing room above/below */
+  width: 100%;
+  box-sizing: border-box;   /* include padding in width */
+  animation: fadeInContainer 0.4s ease both; /* fade in the whole grid */
 }

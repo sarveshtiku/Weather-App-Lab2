@@ -1,17 +1,139 @@
 /* src/components/SearchForm.css */
 .search-form {
   display: flex;
-  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  gap: 0.5rem;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 2px solid #ccc;
+  border-radius: 0.75rem;
+  font-family: 'Crimson Text', serif;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 200ms;
+}
+
+.search-form input:focus {
+  border-color: #928dab;
+}
+
+.search-form button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: #1f1c2c;
+  color: #fff;
+  border-radius: 0.75rem;
+  font-family: 'Crimson Text', serif;
+  cursor: pointer;
+  transition: background 200ms;
+}
+
+.search-form button:hover {
+  background: #342d45;
+}
+/* SearchForm.css */
+.search-form {
+  display: flex;
+  justify-content: center;    /* center the input+button */
   gap: 0.5rem;
   margin-bottom: 2rem;
 }
+
+/* Forecast.css */
+.forecast-title {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.sunmoon {
+  justify-content: center;     /* center sunrise/sunset row */
+}
+/* src/components/SearchForm.css */
+
+.search-form {
+  display: flex;
+  justify-content: center;      /* center contents horizontally */
+  gap: 0.5rem;                   /* tweak this to taste */
+  margin: 0 auto 2rem;           /* auto left/right will center the form */
+  max-width: 600px;              /* constrains the width */
+}
+
 .search-form input {
   flex: 1;
-  padding: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: 2px solid #ccc;
+  border-radius: 0.75rem;
+  font-family: 'Crimson Text', serif;
   font-size: 1rem;
+  outline: none;
+  transition: border-color 200ms;
 }
+
+.search-form input:focus {
+  border-color: #928dab;
+}
+
 .search-form button {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: #1f1c2c;
+  color: #fff;
+  border-radius: 0.75rem;
+  font-family: 'Crimson Text', serif;
   cursor: pointer;
+  transition: background 200ms;
+}
+
+.search-form button:hover {
+  background: #342d45;
+}
+/* src/components/SearchForm.css */
+.search-form {
+  display: flex;
+  justify-content: center;    /* center contents horizontally */
+  max-width: 600px;            /* constrain its width */
+  width: 100%;                 /* allow margin auto to work */
+  margin: 0 auto 2rem;         /* auto L/R centers the whole form */
+  gap: 0.5rem;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 2px solid #ccc;
+  border-radius: 0.75rem;
+  font-family: 'Crimson Text', serif;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 200ms;
+}
+
+.search-form input:focus {
+  border-color: #928dab;
+}
+
+.search-form button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: #1f1c2c;
+  color: #fff;
+  border-radius: 0.75rem;
+  font-family: 'Crimson Text', serif;
+  cursor: pointer;
+  transition: background 200ms;
+}
+
+.search-form button:hover {
+  background: #342d45;
+}
+.search-form {
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  gap: 0.5rem;
 }

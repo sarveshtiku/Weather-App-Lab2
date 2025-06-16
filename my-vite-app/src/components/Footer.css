@@ -3,10 +3,13 @@
   text-align: center;
   margin-top: 3rem;
   padding: 1rem 0;
-  color: #666;
+  font-family: 'Crimson Text', serif;
+  color: #ddd;
   font-size: 0.9rem;
 }
+
 .app-footer a {
-  color: #007ACC;
+  color: #f2e9e4;
   text-decoration: none;
 }
+
