@@ -64,6 +64,7 @@ A simple React application that displays a 5-day weather forecast (3-hour interv
 ## Demo
 <p align="center">
 <img width="682" alt="Screenshot 2025-06-13 at 15 32 37" src="https://github.com/user-attachments/assets/d42400c0-7077-4b7d-8e18-3b50f88c58b5" />
+<img width="1143" alt="Screenshot 2025-06-15 at 19 09 00" src="https://github.com/user-attachments/assets/dcf8a1fa-f2ae-4950-b1c8-17c645464efe" />
 </p>
 
 ## Project Structure  
