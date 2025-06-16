@@ -8,6 +8,7 @@ A simple React application that displays a 5-day weather forecast (3-hour interv
 - **API integration** with OpenWeatherMap
 - **Responsive UI** components: forecast cards, sunrise/sunset display, navigation
 
+Delopyed using Vercel: [Weather App Link](https://weather-app-unit-3-335b7q3ir-sarveshtikus-projects.vercel.app/)
 ---
 
 ## Table of Contents
